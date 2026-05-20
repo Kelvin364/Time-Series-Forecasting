@@ -90,6 +90,4 @@ The full Task 3 run completes in well under one hour on this configuration.
 - Telecommunications activity dataset for Milan, Harvard Dataverse, doi:10.7910/DVN/EGZHFV
 - Milan grid dataset, Harvard Dataverse, doi:10.7910/DVN/QJWLFU
 
-## AI usage statement
-
-Code structure, model templates and report drafting were assisted with an AI coding tool. All design decisions (model choice, hyperparameters, evaluation protocol, file layout, fallback strategy under memory pressure) were made by the author. All implementation outputs were reviewed and validated against the rubric and the actual data.
+Code structure and debugging were assisted with an AI chat tool. All design decisions (model choice, hyperparameters, evaluation protocol, file layout, fallback strategy under memory pressure) were made by the author.
