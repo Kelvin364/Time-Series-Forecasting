@@ -1,0 +1,27 @@
+# Minimum direct dependencies. Pin versions to what was used on the development
+# machine (Python 3.9 on macOS arm64). Jupyter is optional, only needed if you
+# want to open the .ipynb files.
+
+numpy==2.0.2
+pandas==2.3.3
+pyarrow==21.0.0
+scipy==1.13.1
+scikit-learn==1.5.2
+statsmodels==0.14.6
+matplotlib==3.9.4
+seaborn==0.13.2
+Pillow==11.3.0
+psutil==7.2.2
+
+# PyTorch with MPS backend on Apple Silicon. CPU only build on Linux/Windows
+# is also fine, the runner falls back to CPU if MPS is not available.
+torch==2.4.1
+
+# PDF assembly (pure Python, no system dependencies)
+fpdf2==2.8.4
+
+# Optional notebooks tooling
+jupyter==1.1.1
+nbformat==5.10.4
+nbconvert==7.17.1
+ipykernel==6.31.0

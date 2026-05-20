@@ -1,0 +1,148 @@
+[11:53:31] ============================================================
+[11:53:31] task3_forecast starting model=sarima areas=['A_5161', 'B_4159', 'C_4556'] fallback=True
+[11:53:32] python 3.9.6 on macOS-15.5-arm64-arm-64bit
+[11:53:32] ============================================================
+[11:53:32] SARIMA on A_5161 (sq 5161)
+[11:53:32]   SARIMA A_5161 fitting (n_train=6480) ...
+[11:53:33]   done. train=0.7s infer=0.01s MAE=446.5 RMSE=705.2 MAPE=31.8%
+[11:53:33] SARIMA on B_4159 (sq 4159)
+[11:53:33]   SARIMA B_4159 fitting (n_train=6480) ...
+[11:53:33]   done. train=0.2s infer=0.01s MAE=158.1 RMSE=197.1 MAPE=57.4%
+[11:53:33] SARIMA on C_4556 (sq 4556)
+[11:53:33]   SARIMA C_4556 fitting (n_train=6480) ...
+[11:53:34]   done. train=0.5s infer=0.01s MAE=191.4 RMSE=223.2 MAPE=41.3%
+[11:53:34] total wall time 2.6s
+[11:53:59] ============================================================
+[11:53:59] task3_forecast starting model=lstm areas=['A_5161', 'B_4159', 'C_4556'] fallback=False
+[11:53:59] python 3.9.6 on macOS-15.5-arm64-arm-64bit
+[11:53:59] ============================================================
+[11:53:59] LSTM on A_5161 (sq 5161)
+[11:54:01]   LSTM A_5161 train_windows=4176 val_windows=2160 device=mps
+[11:54:06]     LSTM A_5161 epoch 01/20 train=0.01432 val=0.06297 *
+[11:54:08]     LSTM A_5161 epoch 02/20 train=0.00226 val=0.06202 *
+[11:54:09]     LSTM A_5161 epoch 03/20 train=0.00182 val=0.05987 *
+[11:54:10]     LSTM A_5161 epoch 04/20 train=0.00149 val=0.05753 *
+[11:54:12]     LSTM A_5161 epoch 05/20 train=0.00135 val=0.05508 *
+[11:54:13]     LSTM A_5161 epoch 06/20 train=0.00129 val=0.05428 *
+[11:54:14]     LSTM A_5161 epoch 07/20 train=0.00135 val=0.05012 *
+[11:54:15]     LSTM A_5161 epoch 08/20 train=0.00143 val=0.05018
+[11:54:17]     LSTM A_5161 epoch 09/20 train=0.00129 val=0.04704 *
+[11:54:18]     LSTM A_5161 epoch 10/20 train=0.00140 val=0.04688 *
+[11:54:19]     LSTM A_5161 epoch 11/20 train=0.00142 val=0.04112 *
+[11:54:20]     LSTM A_5161 epoch 12/20 train=0.00132 val=0.04010 *
+[11:54:21]     LSTM A_5161 epoch 13/20 train=0.00129 val=0.03945 *
+[11:54:23]     LSTM A_5161 epoch 14/20 train=0.00126 val=0.04028
+[11:54:24]     LSTM A_5161 epoch 15/20 train=0.00124 val=0.03822 *
+[11:54:25]     LSTM A_5161 epoch 16/20 train=0.00121 val=0.03385 *
+[11:54:27]     LSTM A_5161 epoch 17/20 train=0.00130 val=0.03737
+[11:54:28]     LSTM A_5161 epoch 18/20 train=0.00123 val=0.03790
+[11:54:29]     LSTM A_5161 epoch 19/20 train=0.00122 val=0.03874
+[11:54:30]     LSTM A_5161 epoch 20/20 train=0.00125 val=0.03595
+[11:54:36]   done. train=29.2s infer=5.26s MAE=985.6 RMSE=1283.2 MAPE=81.5%
+[11:54:36] LSTM on B_4159 (sq 4159)
+[11:54:36]   LSTM B_4159 train_windows=4176 val_windows=2160 device=mps
+[11:54:37]     LSTM B_4159 epoch 01/20 train=0.02420 val=0.07797 *
+[11:54:38]     LSTM B_4159 epoch 02/20 train=0.00482 val=0.07625 *
+[11:54:40]     LSTM B_4159 epoch 03/20 train=0.00429 val=0.07555 *
+[11:54:41]     LSTM B_4159 epoch 04/20 train=0.00420 val=0.06728 *
+[11:54:42]     LSTM B_4159 epoch 05/20 train=0.00396 val=0.07182
+[11:54:43]     LSTM B_4159 epoch 06/20 train=0.00398 val=0.06586 *
+[11:54:45]     LSTM B_4159 epoch 07/20 train=0.00384 val=0.05479 *
+[11:54:46]     LSTM B_4159 epoch 08/20 train=0.00424 val=0.03671 *
+[11:54:47]     LSTM B_4159 epoch 09/20 train=0.00458 val=0.03338 *
+[11:54:49]     LSTM B_4159 epoch 10/20 train=0.00435 val=0.03907
+[11:54:50]     LSTM B_4159 epoch 11/20 train=0.00441 val=0.00739 *
+[11:54:51]     LSTM B_4159 epoch 12/20 train=0.00495 val=0.03383
+[11:54:52]     LSTM B_4159 epoch 13/20 train=0.00426 val=0.02196
+[11:54:53]     LSTM B_4159 epoch 14/20 train=0.00404 val=0.01898
+[11:54:54]     LSTM B_4159 epoch 15/20 train=0.00376 val=0.01367
+[11:54:56]     LSTM B_4159 epoch 16/20 train=0.00384 val=0.01395
+[11:54:56]     LSTM B_4159 early stop at epoch 16
+[11:55:02]   done. train=19.8s infer=6.46s MAE=32.2 RMSE=47.0 MAPE=11.9%
+[11:55:02] LSTM on C_4556 (sq 4556)
+[11:55:02]   LSTM C_4556 train_windows=4176 val_windows=2160 device=mps
+[11:55:04]     LSTM C_4556 epoch 01/20 train=0.01911 val=0.04918 *
+[11:55:05]     LSTM C_4556 epoch 02/20 train=0.00375 val=0.04739 *
+[11:55:06]     LSTM C_4556 epoch 03/20 train=0.00327 val=0.04442 *
+[11:55:08]     LSTM C_4556 epoch 04/20 train=0.00289 val=0.04147 *
+[11:55:10]     LSTM C_4556 epoch 05/20 train=0.00292 val=0.04192
+[11:55:12]     LSTM C_4556 epoch 06/20 train=0.00290 val=0.03686 *
+[11:55:13]     LSTM C_4556 epoch 07/20 train=0.00319 val=0.03945
+[11:55:14]     LSTM C_4556 epoch 08/20 train=0.00301 val=0.03615 *
+[11:55:16]     LSTM C_4556 epoch 09/20 train=0.00324 val=0.02562 *
+[11:55:17]     LSTM C_4556 epoch 10/20 train=0.00335 val=0.02998
+[11:55:18]     LSTM C_4556 epoch 11/20 train=0.00325 val=0.03005
+[11:55:19]     LSTM C_4556 epoch 12/20 train=0.00295 val=0.03266
+[11:55:20]     LSTM C_4556 epoch 13/20 train=0.00288 val=0.02775
+[11:55:22]     LSTM C_4556 epoch 14/20 train=0.00294 val=0.01861 *
+[11:55:23]     LSTM C_4556 epoch 15/20 train=0.00320 val=0.01759 *
+[11:55:24]     LSTM C_4556 epoch 16/20 train=0.00310 val=0.01545 *
+[11:55:25]     LSTM C_4556 epoch 17/20 train=0.00331 val=0.01395 *
+[11:55:26]     LSTM C_4556 epoch 18/20 train=0.00340 val=0.00519 *
+[11:55:28]     LSTM C_4556 epoch 19/20 train=0.00378 val=0.00804
+[11:55:29]     LSTM C_4556 epoch 20/20 train=0.00309 val=0.00517 *
+[11:55:37]   done. train=26.4s infer=7.53s MAE=63.4 RMSE=79.2 MAPE=16.3%
+[11:55:37] total wall time 97.3s
+[11:57:12] ============================================================
+[11:57:12] task3_forecast starting model=tcn areas=['A_5161', 'B_4159', 'C_4556'] fallback=False
+[11:57:12] python 3.9.6 on macOS-15.5-arm64-arm-64bit
+[11:57:12] ============================================================
+[11:57:12] TCN on A_5161 (sq 5161)
+[11:57:14]   TCN A_5161 train_windows=4176 val_windows=2160 device=mps
+[11:57:18]     TCN A_5161 epoch 01/20 train=0.01473 val=0.00291 *
+[11:57:18]     TCN A_5161 epoch 02/20 train=0.00389 val=0.00177 *
+[11:57:19]     TCN A_5161 epoch 03/20 train=0.00270 val=0.00110 *
+[11:57:20]     TCN A_5161 epoch 04/20 train=0.00215 val=0.00131
+[11:57:20]     TCN A_5161 epoch 05/20 train=0.00197 val=0.00080 *
+[11:57:21]     TCN A_5161 epoch 06/20 train=0.00177 val=0.00073 *
+[11:57:22]     TCN A_5161 epoch 07/20 train=0.00151 val=0.00106
+[11:57:22]     TCN A_5161 epoch 08/20 train=0.00146 val=0.00076
+[11:57:23]     TCN A_5161 epoch 09/20 train=0.00133 val=0.00058 *
+[11:57:24]     TCN A_5161 epoch 10/20 train=0.00130 val=0.00057 *
+[11:57:25]     TCN A_5161 epoch 11/20 train=0.00128 val=0.00085
+[11:57:25]     TCN A_5161 epoch 12/20 train=0.00125 val=0.00062
+[11:57:26]     TCN A_5161 epoch 13/20 train=0.00116 val=0.00063
+[11:57:27]     TCN A_5161 epoch 14/20 train=0.00119 val=0.00067
+[11:57:27]     TCN A_5161 epoch 15/20 train=0.00113 val=0.00059
+[11:57:27]     TCN A_5161 early stop at epoch 15
+[11:57:29]   done. train=13.2s infer=1.87s MAE=100.4 RMSE=137.6 MAPE=15.2%
+[11:57:29] TCN on B_4159 (sq 4159)
+[11:57:29]   TCN B_4159 train_windows=4176 val_windows=2160 device=mps
+[11:57:30]     TCN B_4159 epoch 01/20 train=0.03178 val=0.00500 *
+[11:57:31]     TCN B_4159 epoch 02/20 train=0.00841 val=0.00295 *
+[11:57:31]     TCN B_4159 epoch 03/20 train=0.00597 val=0.00219 *
+[11:57:32]     TCN B_4159 epoch 04/20 train=0.00501 val=0.00205 *
+[11:57:33]     TCN B_4159 epoch 05/20 train=0.00403 val=0.00195 *
+[11:57:33]     TCN B_4159 epoch 06/20 train=0.00380 val=0.00183 *
+[11:57:34]     TCN B_4159 epoch 07/20 train=0.00363 val=0.00206
+[11:57:35]     TCN B_4159 epoch 08/20 train=0.00344 val=0.00180 *
+[11:57:36]     TCN B_4159 epoch 09/20 train=0.00332 val=0.00181
+[11:57:36]     TCN B_4159 epoch 10/20 train=0.00333 val=0.00184
+[11:57:37]     TCN B_4159 epoch 11/20 train=0.00325 val=0.00204
+[11:57:38]     TCN B_4159 epoch 12/20 train=0.00326 val=0.00190
+[11:57:38]     TCN B_4159 epoch 13/20 train=0.00309 val=0.00186
+[11:57:38]     TCN B_4159 early stop at epoch 13
+[11:57:40]   done. train=9.0s infer=1.58s MAE=17.0 RMSE=21.5 MAPE=8.4%
+[11:57:40] TCN on C_4556 (sq 4556)
+[11:57:40]   TCN C_4556 train_windows=4176 val_windows=2160 device=mps
+[11:57:41]     TCN C_4556 epoch 01/20 train=0.02210 val=0.00488 *
+[11:57:41]     TCN C_4556 epoch 02/20 train=0.00590 val=0.00278 *
+[11:57:42]     TCN C_4556 epoch 03/20 train=0.00439 val=0.00158 *
+[11:57:43]     TCN C_4556 epoch 04/20 train=0.00380 val=0.00179
+[11:57:43]     TCN C_4556 epoch 05/20 train=0.00323 val=0.00126 *
+[11:57:44]     TCN C_4556 epoch 06/20 train=0.00286 val=0.00141
+[11:57:45]     TCN C_4556 epoch 07/20 train=0.00283 val=0.00130
+[11:57:46]     TCN C_4556 epoch 08/20 train=0.00266 val=0.00138
+[11:57:46]     TCN C_4556 epoch 09/20 train=0.00264 val=0.00140
+[11:57:47]     TCN C_4556 epoch 10/20 train=0.00263 val=0.00124 *
+[11:57:48]     TCN C_4556 epoch 11/20 train=0.00252 val=0.00122 *
+[11:57:48]     TCN C_4556 epoch 12/20 train=0.00248 val=0.00121 *
+[11:57:49]     TCN C_4556 epoch 13/20 train=0.00242 val=0.00121 *
+[11:57:50]     TCN C_4556 epoch 14/20 train=0.00246 val=0.00127
+[11:57:50]     TCN C_4556 epoch 15/20 train=0.00241 val=0.00134
+[11:57:51]     TCN C_4556 epoch 16/20 train=0.00244 val=0.00125
+[11:57:52]     TCN C_4556 epoch 17/20 train=0.00244 val=0.00121
+[11:57:53]     TCN C_4556 epoch 18/20 train=0.00234 val=0.00123
+[11:57:53]     TCN C_4556 early stop at epoch 18
+[11:57:54]   done. train=12.5s infer=1.73s MAE=32.3 RMSE=41.7 MAPE=8.0%
+[11:57:55] total wall time 42.1s

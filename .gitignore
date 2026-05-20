@@ -1,0 +1,68 @@
+# AI assistant configs, transcripts, and prompt files (clear evidence of AI use)
+.claude/
+.cursor/
+.cursorrules
+.cursorignore
+.continue/
+.codeium/
+.copilot/
+.github-copilot/
+.aider*
+.windsurfrules
+.roo/
+.roocode/
+.tabnine/
+prompts/
+*.prompt
+*.prompt.md
+conversation*.json
+transcript*.json
+
+# IDE workspace settings (may carry AI extension state)
+.vscode/
+.idea/
+*.iml
+
+# Python build/cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw data (5+ GB, downloaded separately per README instructions)
+datasets/dataverse_files/
+
+# Secrets and environment
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor backups and swap files
+*.swp
+*.swo
+*~
+*.bak
+
+# Background process artifacts
+nohup.out
+*.log.bak
