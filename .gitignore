@@ -1,24 +1,6 @@
-# AI assistant configs, transcripts, and prompt files (clear evidence of AI use)
-.claude/
-.cursor/
-.cursorrules
-.cursorignore
-.continue/
-.codeium/
-.copilot/
-.github-copilot/
-.aider*
-.windsurfrules
-.roo/
-.roocode/
-.tabnine/
-prompts/
-*.prompt
-*.prompt.md
-conversation*.json
-transcript*.json
 
-# IDE workspace settings (may carry AI extension state)
+
+# IDE workspace settings 
 .vscode/
 .idea/
 *.iml
